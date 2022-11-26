@@ -1,0 +1,101 @@
+﻿@model Web_Selling_Laptop.Models.User
+
+@{
+    ViewBag.Title = "Login";
+}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/Style/dangnhap.css">
+    <script src="https://kit.fontawesome.com/4498488328.js" crossorigin="anonymous"></script>
+    <title>Title</title>
+</head>
+<body>
+
+    <!-- Body -->
+    <section class="body" style="margin-top:48px;">
+        <div class="container">
+            <div class="banner">
+                <div class="row" style="height: 450px;">
+                    <div id="viewContainer" class="col-6">
+                        @using (Html.BeginForm("Login", "User", FormMethod.Post))
+                        {
+                            <div id="viewLogin" class="show">
+                                <h4 class="txt_title">Đăng nhập / <a href="@Url.Action("Register","User",FormMethod.Post)">Đăng Ký</a></h4>
+                                <h4 class="txt_hello">Chào mừng bạn đã quay trở lại</h4>
+                                <p class="txt_greet">Hãy bắt đầu với số điện thoại của bạn nhé</p>
+
+                                @Html.TextBoxFor(m => m.SDT, "", new { @class = "form_input", @placeholder = "Số điện thoại" })
+                                @Html.ValidationMessageFor(m => m.SDT, "", new { @class = "badge badge-danger" })
+                                <span id="clearBtn" onclick="clearField_1()"><i id="icon" class="fa-solid fa-circle-xmark"></i></span>
+
+                                <input type="button" onclick="nextView()" style="font-weight: bold; background-color: #4370FF;color:white " class="form_button" value="Tiếp theo">
+                            </div>
+                            <div id="viewPassword" class="hidden">
+                                <h4 class="txt_title">Mật khẩu</h4>
+                                <p class="txt_greet"></p>
+
+                                @Html.TextBoxFor(m => m.Password, "", new { @class = "form_input", @placeholder = "Nhập mật khẩu", @type = "password" })
+                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "badge badge-danger" })
+                                <span id="clearBtn" onclick="clearField_2()"><i id="icon" class="fa-solid fa-circle-xmark"></i></span>
+
+                                <input type="submit" style="font-weight: bold; background-color: #4370FF;color:white " class="form_button" value="Đăng nhập" />
+                                <input type="button" onclick="backView()" style="font-weight: bold; background-color: #4370FF;color:white " class="form_button--back" value="Quay lại">
+                            </div>
+
+
+                        }
+
+                    </div>
+                    <div style="height: 100%; border-radius: 0px 10px 10px 0px; object-fit: contain;" class="col-6">
+                        <img style="width: 100%; height: 100%; border-radius: 0px 10px 10px 0px;" src="https://thinkpro.vn/_nuxt/img/signin-pattern.d7c5fe2.png"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        $("viewPassword").change(function () {
+
+        })
+    </script>
+
+    <script>
+        function clearField_1() {
+            document.getElementById("SDT").value = "";
+        }
+        function clearField_2() {
+            document.getElementById("Password").value = "";
+        }
+        function nextView() {
+            var text = document.getElementById('SDT').value;
+            if (text == null || text == "") {
+                alert("Value can't be null")
+            }
+            else {
+                var ele = document.getElementById('viewPassword').className = "show";
+                var ele = document.getElementById('viewLogin').className = "hidden";
+            }
+
+        }
+        function backView() {
+            var ele = document.getElementById('viewPassword').className = "hidden";
+            var ele = document.getElementById('viewLogin').className = "show";
+        }
+    </script>
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>

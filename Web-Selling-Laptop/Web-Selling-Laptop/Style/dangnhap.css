@@ -1,0 +1,180 @@
+.form_button {
+    margin-top: 16px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight:bold;
+}
+
+.form_button:focus {
+    outline: none;
+    border: none;
+}
+
+.form_button:hover {
+    cursor: pointer;
+}
+
+.form_button--back {
+    margin-top: 25%;
+    padding: 8px;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+}
+
+.form_button--back:hover {
+    cursor: pointer;
+}
+
+.form_button--back:focus {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form_input {
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 90%;
+    font-size: 28px;
+}
+
+.form_input:focus {
+    border: none;
+    outline: none;
+}
+
+.form_input::placeholder {
+    color: rgb(163, 163, 163);
+}
+
+.form_input1 {
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 90%;
+    font-size: 28px;
+}
+
+    .form_input1:focus {
+        border: none;
+        outline: none;
+    }
+
+    .form_input1::placeholder {
+        color: rgb(163, 163, 163);
+    }
+.txt_title {}
+
+.txt_greet {
+    font-size: 20px;
+    color: blue;
+}
+
+.txt_hello {
+    font-weight: bold;
+    color: rgb(26, 183, 183);
+}
+.banner {
+    border-radius:10px;
+    background-color: white;
+    box-shadow: 0px -1px 10px 2px rgba(0, 0, 0, 0.2);
+}
+/*#myModal {
+    display: none;*/ /* Hidden by default */
+    /*position: fixed;*/ /* Stay in place */
+    /*z-index: 1;*/ /* Sit on top */
+    /*padding-top: 100px;*/ /* Location of the box */
+    /*left: 0;
+    top: 0;
+    width: 100%;*/ /* Full width */
+    /*height: 100%;*/ /* Full height */
+    /*overflow: auto;*/ /* Enable scroll if needed */
+    /*background-color: rgb(0,0,0);*/ /* Fallback color */
+    /*background-color: rgba(0,0,0,0.4);*/ /* Black w/ opacity */
+    /*-webkit-animation-name: fadeIn;*/ /* Fade in the background */
+    /*-webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}*/
+
+#icon {
+    /* display: none; */
+}
+
+#viewLogin {
+    height: 100%;
+}
+
+#viewContainer {
+    height: fit-content;
+    padding: 48px;
+}
+
+#viewPassword {
+    position: relative;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+.close{
+    color:white;
+    border-radius:40px;
+}
+
+/* Add Animation */
+/*@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}*/
+#clearBtn:hover {
+    cursor:pointer;
+}

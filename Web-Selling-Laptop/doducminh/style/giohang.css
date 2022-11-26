@@ -1,0 +1,291 @@
+/* HEADER */
+#row-1 {
+    position: relative;
+    top: 16px;
+}
+
+#row-2 {
+    position: relative;
+    margin-top: 56px;
+}
+
+#row-3 {
+    position: relative;
+    margin-top: 56px;
+}
+
+.menu_button {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(226, 231, 241);
+    text-align: center;
+    border-radius: 45px;
+    transition: 0.4s;
+}
+
+.menu_button i {
+    position: relative;
+    top: calc(50% - 13px);
+}
+
+.menu_button:hover {
+    background-color: rgb(168, 180, 191);
+    cursor: pointer;
+}
+
+#sale {
+    color: red;
+}
+
+#sale:hover {
+    color: blue;
+}
+
+.navbar-brand {
+    width: 100px;
+}
+
+.nav-item {
+    margin-left: 5px;
+}
+
+#search-bar {}
+
+#search-bar input {
+    border-radius: 60px;
+    width: 400px;
+}
+
+#search-bar button {
+    border-radius: 50px;
+}
+
+.menu__bar {
+    height: fit-content;
+    width: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 16px 32px 16px 32px;
+    box-shadow: 0px 3px rgb(205, 205, 205, 0.3);
+}
+
+
+
+.menu__item {
+    margin-right: 16px;
+    border-radius: 6px;
+    position: relative;
+    height: fit-content;
+    width: 140px;
+    padding: 12px 16px 12px 16px;
+    transition: 0.5s;
+}
+
+.menu__item:hover {
+    background-color: rgb(216, 218, 233);
+    cursor: pointer;
+}
+
+.menu__img {
+    border-radius: 20px;
+    height: 35px;
+    position: relative;
+    width: 35px;
+}
+
+.menu__title {
+    font-weight: bold;
+    margin-left: 8px;
+    position: relative;
+
+}
+
+.menu__slider {
+    display: flex;
+}
+
+.menu__slider .menu_button {
+    float: right;
+    position: relative;
+    top: 8px;
+
+}
+
+#user, #cart {
+    margin-left: 16px;
+}
+
+
+.menu_button+.menu_button {
+    margin-left: 8px;
+}
+
+/* BODY */
+.body {
+    background-color: #ECF0F4;
+}
+
+.item__card {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    padding: 16px;
+}
+
+.item__card+.item__card {
+    margin-top: 8px;
+}
+
+.item__img {
+    border: 1px solid rgb(177, 177, 177, 0.4);
+    width: 80px;
+    height: fit-content;
+    object-fit: cover;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.item__title {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item__body {}
+
+.item__info {
+    margin-top: 16px;
+}
+
+.item__price {
+    margin-top: 8px;
+}
+
+.item__icon {
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: inline-block;
+    border-radius: 50px;
+    border: 2px solid rgb(139, 139, 139, 0.5);
+    color: rgb(139, 139, 139, 0.5);
+    text-align: center;
+
+}
+
+i {
+    position: relative;
+    font-weight: bold;
+}
+
+.quantitybtn {
+    display: inline-block;
+
+}
+
+.quantitybtn {}
+
+#quantity {
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.btn {
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+
+}
+
+.btn--enabled {
+    background-color: aliceblue;
+}
+
+.btn--disabled {
+    background-color: aliceblue;
+    opacity: 0.3;
+    outline: none;
+}
+
+.btn--disabled:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+#calculated-price {
+
+    color: red;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.btn__delete {
+    position: relative;
+    float: right;
+    font-size: 16px;
+    background-color: white;
+    outline: none;
+    border: none;
+    margin-right: 24px;
+}
+
+.btn__delete:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.cart__summary {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    padding: 16px;
+}
+
+.cart__summary .row {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart__summary .row+.row {
+    margin-top: 8px;
+}
+
+.btn__buy {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 16px;
+    width: 100%;
+    color: white;
+    background-color: #FE3464;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.btn__buy:focus {
+    outline: none;
+    border: none;
+    
+}
+
+.btn__buy:hover {
+    background-color: #de2f57;
+    cursor: pointer;
+}
+
+#tongcong {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(143, 143, 143, 0.5);
+    border-top: 1px solid rgb(143, 143, 143, 0.5);
+}

@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Web_Selling_Laptop.Models.Laptop>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.CateName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LaptopName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CPU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RAM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Card)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HDH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImgPath)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.CateName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LaptopName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CPU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RAM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Card)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HDH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            <span style="white-space: nowrap; width: 50px; overflow: hidden; text-overflow: clip; display: inline-block; ">@item.ImgPath</span>
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LaptopId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LaptopId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LaptopId })
+        </td>
+    </tr>
+}
+
+</table>

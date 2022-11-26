@@ -1,0 +1,466 @@
+/* FOOTER */
+
+.footer {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.footer__card {
+    background-color: white;
+    padding: 16px;
+    border-radius: 20px;
+    bottom: 0px;
+    position: relative;
+    width: auto;
+    height: 250px;
+    box-shadow: 0px -1px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.footer__brand {
+
+    float: left;
+    width: 200px;
+    height: 100px;
+
+}
+
+.brand__text {
+    font-weight:bold;
+    font-size: 13px;
+    clear: both;
+    margin-left: 16px;
+}
+
+.footer__detail {
+    flex-wrap: wrap;
+    width: 400px;
+    display: flex;
+    color: blue;
+    font-weight: bold;
+}
+
+.footer__detail p {
+    flex: 0 0 33.333333%;
+}
+
+
+/* HEADER */
+#row-1 {
+    position: relative;
+    top: 16px;
+}
+
+#row-2 {
+    position: relative;
+    margin-top: 56px;
+}
+
+#row-3 {
+    position: relative;
+    margin-top: 56px;
+}
+
+.menu_button {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(226, 231, 241);
+    text-align: center;
+    border-radius: 45px;
+    transition: 0.4s;
+}
+
+.menu_button i {
+    position: relative;
+    top: calc(50% - 13px);
+}
+
+.menu_button:hover {
+    background-color: rgb(168, 180, 191);
+    cursor: pointer;
+}
+
+#sale {
+    color: red;
+}
+
+#sale:hover {
+    color: blue;
+}
+
+.navbar-brand {
+    width: 100px;
+}
+
+.nav-item {
+    margin-left: 5px;
+}
+
+#search-bar {}
+
+#search-bar input {
+    border-radius: 60px;
+    width: 400px;
+}
+
+#search-bar button {
+    border-radius: 50px;
+}
+
+.menu__bar {
+    height: fit-content;
+    width: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 16px 32px 16px 32px;
+    box-shadow: 0px 3px rgb(205, 205, 205, 0.3);
+}
+
+
+
+.menu__item {
+    margin-right: 16px;
+    border-radius: 6px;
+    position: relative;
+    height: fit-content;
+    width: 140px;
+    padding: 12px 16px 12px 16px;
+    transition: 0.5s;
+}
+
+.menu__item:hover {
+    background-color: rgb(216, 218, 233);
+    cursor: pointer;
+}
+
+.menu__img {
+    border-radius: 20px;
+    height: 35px;
+    position: relative;
+    width: 35px;
+}
+
+.menu__title {
+    font-weight: bold;
+    margin-left: 8px;
+    position: relative;
+
+}
+
+.menu__slider {
+    display: flex;
+}
+
+.menu__slider .menu_button {
+    float: right;
+    position: relative;
+    top: 8px;
+
+}
+
+#user,#cart, #logout  {
+    margin-left: 16px;
+}
+
+
+.menu_button+.menu_button {
+    margin-left: 8px;
+}
+
+
+
+/* BODY */
+
+.banner__big {
+    width: auto;
+    height: 370px;
+    border-radius: 20px;
+}
+
+.banner__img {
+    height: 370px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    border-radius: 20px;
+}
+
+
+.cards {
+    width: auto;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    height: fit-content;
+    width: auto;
+    padding: 16px;
+    height: calc(370px / 3 - 8px);
+    border-radius: 40px;
+    background-color: #F8FAFC !important;
+    border: none !important;
+}
+
+/* thương hiệu */
+.brand__list {
+    margin-top: 16px;
+    display: flex;
+}
+
+.brand__card {
+    padding:16px;
+    width: 120px;
+    height: 75px;
+    border: 1px solid rgb(16, 16, 16, 0.1);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.brand__card+.brand__card {
+    margin-left: 8px;
+}
+
+.brand__card:hover {
+    background-color: rgb(218, 218, 218);
+    cursor: pointer;
+}
+
+.brand__img {
+    object-fit:contain;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* Tat ca laptop */
+.product__search {
+    border-radius: 40px;
+
+}
+
+.product__sort {}
+
+.product__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 0 33%
+}
+
+.product__item {
+    width: 31.33%;
+    height: fit-content;
+    border: 1px solid rgb(62, 62, 62, 0.1);
+    margin-left: 8px;
+    margin-top: 16px;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding-bottom:8px;
+
+}
+
+.product__item:hover {
+    background-color: rgb(234, 245, 255);
+    cursor: pointer;
+}
+
+.product__item img {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding: 16px;
+}
+
+.product__description {
+    padding:8px;
+    display:block;
+    font-size: 13px;
+    display: block;
+    text-align:center;
+    margin:0px;
+    width:100%;
+}
+
+.banner__sort {
+    background-color: #F8FAFC;
+    padding: 16px;
+    width: 100%;
+    border-radius: 20px;
+    height: fit-content;
+    border: 1px solid rgb(39, 39, 39, 0.1);
+}
+
+.product__name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product__price {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sort__grp {
+    margin-top: 8px;
+}
+
+.sort__item {
+    background-color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8px;
+    margin-left: 12px;
+}
+
+
+.sort__item:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+
+.sort__item:hover {
+    background-color: rgb(186, 213, 236, 0.5);
+    cursor: pointer;
+}
+
+.sort__card {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.sort__search input {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid rgb(196, 196, 196, 0.5);
+    border-radius: 5px;
+}
+
+.sort__search input:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+/*Collapse menu*/
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(196, 196, 196, 0.5);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {}
+
+.collapsible:focus {
+    outline: none;
+}
+
+.collapsible span {
+    position: relative;
+    float: right;
+    margin-top: 3px;
+
+}
+
+.collapsible:hover {
+    color: blue;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.advertise_image{
+    height:100%;
+    width:100%;
+}
+.advertise_image:hover {
+    opacity:0.8;
+    cursor:pointer;
+}
+.advertise_container{
+    width:100%;
+    height:fit-content
+}
+
+/*pagination*/
+.pagination-view{
+    float:right;
+    margin-right:24px;
+    margin-top:16px;
+}
+.pagination-view ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*background-color: #333;*/
+}
+
+.pagination-view li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+    .pagination-view li:last-child {
+        border-right: none;
+    }
+
+    .pagination-view li a {
+        display: block;
+        color: Black;
+        text-align: center;
+        padding: 8px 16px;
+        text-decoration: none;
+        border:2px solid black;
+        border-radius:5px;
+    }
+
+        .pagination-view li a:hover:not(.active) {
+            background-color: #c1dce8;
+            opacity:0.5;
+        }
+
+.pagination-view .active {
+    background-color: #c1dce8;
+}
+.search_btn {
+    position: absolute;
+    right: 45px;
+    top: 85px;
+    border: none;
+    outline: none;
+    background: none;
+}
+.search_btn:focus{
+    border:none;
+    outline:none;
+}
+.search_btn i:hover{
+    color:#5ddbd4;
+    cursor:pointer;
+}
